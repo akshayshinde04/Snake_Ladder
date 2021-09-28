@@ -2,28 +2,28 @@ package snakeladder;
 
    public class Snakeproblem {
 	   public static void main(String[] args) {
-	            int snake=1, ladder=2, player=0;
-	            while (player<100) {
+	            int SNAKE=1, LADDER=2, Player=0;
+	            while (Player<100) {
 	            int dice=(int)(Math.random()*6+1);
 	            System.out.println("The die number "+dice);
 
 	            int check=(int)(Math.random()*3+1);
 	            if (check==ladder) {
-	                player= player+dice;
-	                if (player>100)
-	                  player=player-dice;
+	                Player= Player+dice;
+	                if (Player>100)
+	                  Player=Player-dice;
 	            }
 	            else if (check==snake) {
-	                player=player-dice;
-	                if (player<0)
-	                    player=0;
-	                else if (player>100)
-	                    player=player-dice;
+	                Player=Player-dice;
+	                if (Player<0)
+	                    Player=0;
+	                else if (Player>100)
+	                    Player=Player-dice;
 	            }
 	            else {
-	                player=player;
+	                Player=Player;
 	            }
-	            System.out.println("Player current position is: "+player);
+	            System.out.println("Player current position is: "+Player);
 	        }
 	   }
    } 
