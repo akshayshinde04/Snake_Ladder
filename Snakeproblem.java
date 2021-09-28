@@ -10,6 +10,9 @@ package snakeladder;
 	        if (check==snake) {
 	            player= player-dice;
 	            System.out.println("Snake bite");
+			if (player<0) {
+	                    player=0;
+	                }
 	        }
 	        else if (check==ladder) {
 	            player=player+dice;
