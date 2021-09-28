@@ -2,7 +2,7 @@ package snakeladder;
 
    public class Snakeproblem {
 	   public static void main(String[] args) {
-	        int snake=1, ladder=2, player=15;
+	        int snake=1, ladder=2, player=0;
 	        int dice=(int)(Math.random()*6+1);
 	        System.out.println(dice);
 
