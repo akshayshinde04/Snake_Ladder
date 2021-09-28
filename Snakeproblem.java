@@ -11,7 +11,7 @@ package snakeladder;
 	            if (check==ladder) {
 	                player= player+dice;
 	                if (player>100)
-	                    player=player-dice;
+	                  player=player-dice;
 	            }
 	            else if (check==snake) {
 	                player=player-dice;
@@ -21,7 +21,7 @@ package snakeladder;
 	                    player=player-dice;
 	            }
 	            else {
-	                player=player+0;
+	                player=player;
 	            }
 	            System.out.println("Player current position is: "+player);
 	        }
