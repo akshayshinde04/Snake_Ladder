@@ -18,7 +18,7 @@ package snakeladder;
 	                }
 	            }
 	            else {
-	                player=player+dice;
+	                player=player;
 	            }
 	            System.out.println("Player current position is: "+player);
 	    }
