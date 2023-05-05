@@ -11,7 +11,7 @@ package snakeladder;
 
 	            if (play==LADDER) {
 	                Player= Player+dice;
-	                if (Payer>100)
+	                if (Player>100)
 	                    Player=Player-dice;
 	            }
 	            else if (play==SNAKE) {
